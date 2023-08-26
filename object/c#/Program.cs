@@ -2,21 +2,21 @@
 {
     private static void Main(string[]args)
     {
-     int a =4;
+     const int a =4;
          Console.WriteLine("int :" +a);
-    long b =8;
+    const long b =8;
         Console.WriteLine("Long:" +b);
-    float c =4;
+    const float c =4;
         Console.WriteLine("float:" +c);
-    double d =8;
+    const double d =8;
         Console.WriteLine("Double :" +d);
-    decimal e =16;
+    const decimal e =16;
         Console.WriteLine("decimal :" + e);
-    bool f =true;
+    const bool f =true;
         Console.WriteLine("bool :" +f);
-    char g ='j';
+    const char g ='j';
         Console.WriteLine("char :" +g);
-    string i ="luu giu chuoi ki tu bao quoanh boi dau ngoac kep";
+    const string i ="luu giu chuoi ki tu bao quoanh  dau ngoac kep";
         Console.WriteLine("String :" +i);
     }
 }
