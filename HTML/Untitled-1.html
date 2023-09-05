@@ -6,36 +6,63 @@
     <title>Document</title>
 </head>
 <body>
-<h2>HTML Image</h2>
-<img src="logo.png" alt="logo" width="500" height="333">
-<div>
-    <h2>Alternative text</h2>
+    <h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
 
-<p>The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what the image contains:</p>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
 
-<img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
 <div>
-    <style>
-/* This style sets the width of all images to 100%: */
-img {
-  width: 100%;
+    <h2>Image Maps</h2>
+<p>Click on the computer to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+</map>
+</div>
+<div>
+    <h2>Image Maps</h2>
+<p>Click on the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<div>
+    <h2>Image Maps</h2>
+<p>Click on the croissant to go to a new page and read more about the topic:</p>
+
+<img src="frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+<map name="foodmap">
+  <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm">
+</map>
+
+</div>
+</div>
+<div>
+    <h2>Image Maps</h2>
+
+<p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
 }
-</style>
-</head>
-<body>
-
-<h2>Width/Height Attributes or Style?</h2>
-
-<p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
-
-<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
-
-<p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
-
-<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-
+</script>
 </div>
-</div>
-</body>
 </body>
 </html>
