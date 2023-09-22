@@ -4,10 +4,12 @@ public class Program
     private static void Main(string[] args)
     {
         fruit hq = new fruit();
-        hq.Mahoaqua = "124412";
-        hq.loaihoaqua = "Tao";
-        hq.giaban = 10000;
-        hq.hienthi();
+        fruit hq2 = new fruit();
+
+        hq2.Mahoaqua = "124412";
+        hq2.loaihoaqua = "Tao";
+        hq2.giaban = 10000;
+        hq2.hienthi();
         
     }
 /*     {
