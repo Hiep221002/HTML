@@ -6,6 +6,7 @@ namespace Newapp.Models
         public string loaihoaqua{get;set;}
         public int giaban{get;set;}
         public void Nhapthongtin()
+        
         {
             Console.Write("Mahoaqua=");
             Console.Write("loaihoaqua=");
