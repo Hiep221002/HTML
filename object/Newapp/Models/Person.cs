@@ -15,6 +15,11 @@ namespace Newapp.Models
             Console.Write("Age =");
             Age = Console.ReadLine();
             }
+            public int namsinh (int age)
+            {
+                int namsinh = 2023 - age;
+                return namsinh;
+            }
         public void hienthi()
         {
     Console.WriteLine(FullName + "-" + Address+"-"+Age );
