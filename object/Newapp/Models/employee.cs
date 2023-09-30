@@ -2,22 +2,21 @@ using System.Dynamic;
 
 namespace Newapp.Models
 {
-    public class employee
+    public class employee : Person
     {
+        public string personid{get;set;}
         public string Manhanvien{get;set;}
         public string tennhanvien{get;set;}
         public int tuoi{get;set;}
-        public int luong{get;set;}
         public void Nhapthongtin()
         {
-            Console.Write("Manhanvien = ");
-            Console.Write("tennhanvien=");
-            Console.Write("tuoi=");
-            Console.Write("luong=");
+            base.Nhapthongtin();
+            Console.Write("Personid=");
+            personid = Console.ReadLine();
         }
         public void hienthi()
         {
-        Console.WriteLine(Manhanvien + "-" + tennhanvien + "-" + tuoi + "-" + luong);
+        Console.WriteLine("MSV :{0}",personid);
         }
     }
 }
