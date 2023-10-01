@@ -2,21 +2,31 @@ using System.Dynamic;
 
 namespace Newapp.Models
 {
+    /* Trần Đại Hiệp - 2021050255 */
     public class employee : Person
     {
-        public string personid{get;set;}
         public string Manhanvien{get;set;}
         public string tennhanvien{get;set;}
         public int tuoi{get;set;}
         public void Nhapthongtin()
         {
-            base.Nhapthongtin();
-            Console.Write("Personid=");
-            personid = Console.ReadLine();
+            Console.WriteLine("Manhanvien =");
+            Manhanvien = Console.ReadLine();
+            Console.WriteLine("tennhanvien=");
+            tennhanvien= Console.ReadLine();
+            Console.WriteLine("tuoi = ");
+            tuoi = Convert.ToInt32(Console.ReadLine());
+
+             try{
+                    tuoi = Convert.ToInt32(Console.ReadLine());
+                }catch
+                {
+                    tuoi = 0;
+                }
         }
         public void hienthi()
         {
-        Console.WriteLine("MSV :{0}",personid);
+        Console.WriteLine(Manhanvien+" - "+tennhanvien+" - "+tuoi);
         }
     }
 }
