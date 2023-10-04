@@ -6,21 +6,121 @@
     <title>Document</title>
 </head>
 <body>
-  <p style="border: 1px solid black">Hello World</p>
-  <div style="border: 1px solid black">Hello World</div>
-  
-  <p>Tran Dai Hiep - 2021050255</p>
-  
-<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+  <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+    </div> 
+    
+    <div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+    </div>
+    
+    <div class="city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <style>
+      .note {
+        font-size: 120%;
+        color: red;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h1>My <span class="note">Important</span> Heading</h1>
+      <p>This is some <span class="note">important</span> text.</p>
+      <style>
+        .city {
+          background-color: tomato;
+          color: white;
+          padding: 10px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>The class Attribute</h2>
+        <p>Use CSS to style elements with the class name "city":</p>
+        
+        <h2 class="city">London</h2>
+        <p>London is the capital of England.</p>
+        
+        <h2 class="city">Paris</h2>
+        <p>Paris is the capital of France.</p>
+        
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+        <style>
+          .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+          } 
+          
+          .main {
+            text-align: center;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h2>Multiple Classes</h2>
+          <p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+          
+          <h2 class="city main">London</h2>
+          <h2 class="city">Paris</h2>
+          <h2 class="city">Tokyo</h2>
+          <style>
+            .city {
+              background-color: tomato;
+              color: white;
+              padding: 10px;
+            } 
+            </style>
+            </head>
+            <body>
+            
+            <h2>Different Elements Can Share Same Class</h2>
+            
+            <p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+            
+            <h2 class="city">Paris</h2>
+            <p class="city">Paris is the capital of France.</p>
+            <h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
 
-<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
-<div style="background-color:black;color:white;padding:20px;">
-  <h2>London</h2>
-  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</div> 
-<h1>The span element</h1>
+<button onclick="myFunction()">Hide elements</button>
 
-<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
