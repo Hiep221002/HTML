@@ -7,51 +7,43 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>The input form attribute</h1>
 
-    <h1>The input value attribute</h1>
-
-    <p>The value attribute specifies an initial value for an input field:</p>
+    <p>The form attribute specifies the form an input element belongs to.</p>
     
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <form action="/action_page.php" id="form1">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
       <input type="submit" value="Submit">
     </form>
-    <h1>The input readonly attribute</h1>
+    
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+    
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+    <h1>The input formaction attribute</h1>
 
-<p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John" readonly><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<h1>The input readonly attribute</h1>
-
-<p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+<p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
 
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John" readonly><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit">
+  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+  <h1>The input formmethod Attribute</h1>
+
+<p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+
+<form action="/action_page.php" method="get" target="_blank">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
 </form>
-<h1>The input size attribute</h1>
-
-<p>The size attribute specifies the width (in characters) of an input field:</p>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" size="50"><br>
-  <label for="pin">PIN:</label><br>
-  <input type="text" id="pin" name="pin" size="4"><br><br>
-  <input type="submit" value="Submit">
 </form>
-
 </body>
 </html>
