@@ -7,10 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-    </iframe>
+    <h1>HTML Geolocation</h1>
+    <p>Click the button to get your coordinates.</p>
+    
+    <button onclick="getLocation()">Try It</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    const x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
     
 </body>
 </html>
