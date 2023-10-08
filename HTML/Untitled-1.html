@@ -8,72 +8,33 @@
 </head>
 <body>
     <style>
-        p {
-          text-align: center;
-          color: red;
+        body {
+          background-color: linen;
+        }
+        
+        h1 {
+          color: maroon;
+          margin-left: 40px;
         } 
         </style>
         </head>
         <body>
         
-        <p>Every paragraph will be affected by the style.</p>
-        <p id="para1">Me too!</p>
-        <p>And me!</p>
-        <style>
-            #para1 {
-              text-align: center;
-              color: red;
-            }
-            </style>
-            </head>
-            <body>
-            
-            <p id="para1">Hello World!</p>
-            <p>This paragraph is not affected by the style.</p>
-            <style>
-                p.center {
-                  text-align: center;
-                  color: red;
-                }
-                
-                p.large {
-                  font-size: 300%;
-                }
-                </style>
-                </head>
-                <body>
-                
-                <h1 class="center">This heading will not be affected</h1>
-                <p class="center">This paragraph will be red and center-aligned.</p>
-                <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
-                <style>
-                    * {
-                      text-align: center;
-                      color: blue;
-                    }
-                    </style>
-                    </head>
-                    <body>
-                    
-                    <h1>Hello world!</h1>
-                    
-                    <p>Every element on the page will be affected by the style.</p>
-                    <p id="para1">Me too!</p>
-                    <p>And me!</p>
-                    <style>
-                        * {
-                          text-align: center;
-                          color: blue;
-                        }
-                        </style>
-                        </head>
-                        <body>
-                        
-                        <h1>Hello world!</h1>
-                        
-                        <p>Every element on the page will be affected by the style.</p>
-                        <p id="para1">Me too!</p>
-                        <p>And me!</p>
-                                            
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+        
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+<style>
+    h1 {
+      color: orange;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>This is a heading</h1>
+    <p>The style of this document is a combination of an external stylesheet, and internal style</p>
+    
 </body>
 </html>
