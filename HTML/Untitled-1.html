@@ -8,91 +8,46 @@
 </head>
 <body>
   <style>
-    img {
-      float: right;
+    span.a {
+      display: inline; /* the default for span */
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;  
+      background-color: yellow; 
+    }
+    
+    span.b {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;    
+      background-color: yellow; 
+    }
+    
+    span.c {
+      display: block;
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;    
+      background-color: yellow; 
     }
     </style>
     </head>
     <body>
     
-    <h2>Float Right</h2>
+    <h1>The display Property</h1>
     
-    <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
     
-    <p><img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
-
-    <style>
-      .div1 {
-        float: left;
-        padding: 10px;
-        border: 3px solid #73AD21;
-      }
-      
-      .div2 {
-        padding: 10px;
-        border: 3px solid red;
-      }
-      
-      .div3 {
-        float: left;
-        padding: 10px;  
-        border: 3px solid #73AD21;
-      }
-      
-      .div4 {
-        padding: 10px;
-        border: 3px solid red;
-        clear: left;
-      }
-      </style>
-      </head>
-      <body>
-      
-      <h2>Without clear</h2>
-      <div class="div1">div1</div>
-      <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
-      <br><br>
-      
-      <h2>With clear</h2>
-      <div class="div3">div3</div>
-      <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
-      <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        .box {
-          float: left;
-          width: 33.33%;
-          padding: 50px;
-        }
-        
-        .clearfix::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        </style>
-        </head>
-        <body>
-        
-        <h2>Grid of Boxes</h2>
-        <p>Float boxes side by side:</p>
-        
-        <div class="clearfix">
-          <div class="box" style="background-color:#bbb">
-          <p>Some text inside the box.</p>
-          </div>
-          <div class="box" style="background-color:#ccc">
-          <p>Some text inside the box.</p>
-          </div>
-          <div class="box" style="background-color:#ddd">
-          <p>Some text inside the box.</p>
-          </div>
-        </div>
-        
-        <p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. 
-        We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+    <h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+    
+    <h2>display: block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+    
 </body>
 </html>
