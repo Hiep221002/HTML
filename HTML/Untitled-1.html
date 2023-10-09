@@ -7,34 +7,81 @@
     <title>Document</title>
 </head>
 <body>
-  <style>
-    a[target] {
-      background-color: yellow;
+  <style> 
+    input {
+      width: 100%;
     }
     </style>
     </head>
     <body>
     
-    <h2>CSS [attribute] Selector</h2>
-    <p>The links with a target attribute gets a yellow background:</p>
+    <h2>A full-width input field</h2>
     
-    <a href="https://www.w3schools.com">w3schools.com</a>
-    <a href="http://www.disney.com" target="_blank">disney.com</a>
-    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
-    <style>
-      a[target="_blank"] {
-        background-color: yellow;
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname">
+    </form>
+    <style> 
+      input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
       }
       </style>
       </head>
       <body>
       
-      <h2>CSS [attribute="value"] Selector</h2>
-      <p>The link with target="_blank" gets a yellow background:</p>
+      <h2>Padded input fields</h2>
       
-      <a href="https://www.w3schools.com">w3schools.com</a>
-      <a href="http://www.disney.com" target="_blank">disney.com</a>
-      <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
-      
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+      </form>
+      <style> 
+        input[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid red;
+          border-radius: 4px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Input fields with borders</h2>
+        
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname">
+        </form>
+        <style> 
+          input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: #3CBC8D;
+            color: white;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h2>Input fields with color</h2>
+          
+          <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" value="John">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" value="Doe">
+          </form>
 </body>
 </html>
