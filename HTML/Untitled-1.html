@@ -8,48 +8,66 @@
 </head>
 <body>
   <style>
-    div p {
-      background-color: yellow;
+    /* unvisited link */
+    a:link {
+      color: red;
+    }
+    
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+    
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    }
+    
+    /* selected link */
+    a:active {
+      color: blue;
     }
     </style>
     </head>
     <body>
     
-    <h2>Descendant Selector</h2>
+    <h2>Styling a link depending on state</h2>
     
-    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
-    
-    <div>
-      <p>Paragraph 1 in the div.</p>
-      <p>Paragraph 2 in the div.</p>
-      <section><p>Paragraph 3 in the div.</p></section>
-    </div>
-    
-    <p>Paragraph 4. Not in a div.</p>
-    <p>Paragraph 5. Not in a div.</p>
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
     <style>
-      div > p {
-        background-color: yellow;
-      }
+      a.highlight:hover {
+        color: #ff0000;
+        font-size: 22px;
+      } 
       </style>
       </head>
       <body>
       
-      <h2>Child Selector</h2>
+      <h2>Pseudo-classes and HTML Classes</h2>
       
-      <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+      <p>When you hover over the first link below, it will change color and font size:</p>
       
-      <div>
-        <p>Paragraph 1 in the div.</p>
-        <p>Paragraph 2 in the div.</p>
-        <section>
-          <!-- not Child but Descendant -->
-          <p>Paragraph 3 in the div (inside a section element).</p>
-        </section>
-        <p>Paragraph 4 in the div.</p>
-      </div>
+      <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
       
-      <p>Paragraph 5. Not in a div.</p>
-      <p>Paragraph 6. Not in a div.</p>
+      <p><a href="default.asp">CSS Tutorial</a></p>
+      <style>
+        p {
+          display: none;
+          background-color: yellow;
+          padding: 20px;
+        }
+        
+        div:hover p {
+          display: block;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div>Hover over this div element to show the p element
+          <p>Tada! Here I am!</p>
+        </div>      
 </body>
 </html>
