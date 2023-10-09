@@ -8,66 +8,33 @@
 </head>
 <body>
   <style>
-    #home {
-      width: 46px;
-      height: 44px;
-      background: url(img_navsprites.gif) 0 0;
-    }
-    
-    #next {
-      width: 43px;
-      height: 44px;
-      background: url(img_navsprites.gif) -91px 0;
+    a[target] {
+      background-color: yellow;
     }
     </style>
     </head>
     <body>
     
-    <img id="home" src="img_trans.gif" width="1" height="1">
-    <img id="next" src="img_trans.gif" width="1" height="1">
+    <h2>CSS [attribute] Selector</h2>
+    <p>The links with a target attribute gets a yellow background:</p>
+    
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
     <style>
-      #navlist {
-        position: relative;
-      }
-      
-      #navlist li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        top: 0;
-      }
-      
-      #navlist li, #navlist a {
-        height: 44px;
-        display: block;
-      }
-      
-      #home {
-        left: 0px;
-        width: 46px;
-        background: url('img_navsprites.gif') 0 0;
-      }
-      
-      #prev {
-        left: 63px;
-        width: 43px;
-        background: url('img_navsprites.gif') -47px 0;
-      }
-      
-      #next {
-        left: 129px;
-        width: 43px;
-        background: url('img_navsprites.gif') -91px 0;
+      a[target="_blank"] {
+        background-color: yellow;
       }
       </style>
       </head>
       <body>
       
-      <ul id="navlist">
-        <li id="home"><a href="default.asp"></a></li>
-        <li id="prev"><a href="css_intro.asp"></a></li>
-        <li id="next"><a href="css_syntax.asp"></a></li>
-      </ul>
+      <h2>CSS [attribute="value"] Selector</h2>
+      <p>The link with target="_blank" gets a yellow background:</p>
+      
+      <a href="https://www.w3schools.com">w3schools.com</a>
+      <a href="http://www.disney.com" target="_blank">disney.com</a>
+      <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+      
 </body>
 </html>
