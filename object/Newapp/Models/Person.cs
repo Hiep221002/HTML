@@ -6,6 +6,12 @@ namespace Newapp.Models
             public string FullName {get;set;}
             public string Address {get;set;}
             public int Age {get;set;}
+             public void ps()
+        {
+            FullName = "Nguyen van A";
+            Age = 20;
+            Address = "Haiduong";
+        }
             public void Nhapthongtin()
             {
                 Console.Write("FullName = ");
@@ -14,12 +20,6 @@ namespace Newapp.Models
                 Address = Console.ReadLine();
                 Console.Write("Age=");
                 Age = Convert.ToInt32(Console.ReadLine());
-                try{
-                    Age = Convert.ToInt32(Console.ReadLine());
-                }catch
-                {
-                    Age = 0;
-                }
             }
         public void hienthi()
         {

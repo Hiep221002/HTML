@@ -1,26 +1,17 @@
-﻿using Newapp.Models;
+﻿/* Tran Dai Hiep-2021050255 */
+using Newapp.Models;
 public class Program
 {
 private static void Main(string[]args)
 {
-    Student std = new Student();
-    std.nhapthongtin();
-    std.hienthi();
+     Person[] ps = new Person[3];
+    for(int i = 0; i < ps.Length; i++)
+    {
+        Person std = new Person ();
+        Console.Write("Nhap phan tu thu {0}: ", i);
+        int a = Convert.ToInt32(Console.ReadLine());
+        ps[i] = std;
+        Console.WriteLine();
+    }
 }
-    /* Trần Đại Hiệp - 2021050255 */
-/* {
-    fruit fr = new fruit();
-    fr.Nhapthongtin();
-    fr.hienthi();
-} */
-/* {
-    employee emp = new employee();
-    emp.Nhapthongtin();
-    emp.hienthi();
-} */
-/* Person ps = new Person();
-ps.Nhapthongtin();
-ps.hienthi();
-} */
-
 }
