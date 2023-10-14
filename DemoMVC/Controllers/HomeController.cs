@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿/* TRANDAIHIEP-2021050255 */
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DemoMVC.Models;
 
