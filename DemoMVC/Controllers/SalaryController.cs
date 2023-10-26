@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 public class SalaryController : Controller
 {
-    public IActionResult SalaryIndex()
+    public IActionResult Salary()
     {
         return View();
     }
     [HttpPost]
-    public IActionResult SalaryIndex(string hoten ,int luongcoban,int hesoluong,int phucap)
+    public IActionResult Salary(string hoten ,int luongcoban,int hesoluong,int phucap)
     {
         int luong =luongcoban * hesoluong + phucap;
         string strResult = hoten +"-"+luongcoban;
