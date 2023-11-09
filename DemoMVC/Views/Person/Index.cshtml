@@ -1,8 +1,36 @@
-<form asp-action="Index">
-    <label>PersonID</label>
-    <Input type="text" name="PersonID">
-    <label>FullName</label>
-    <Input type="text" name="Fullname">
-    <Input type="submit" name="gui">
-</form>
-@ViewBag.thongbao
+@model IEnumerable<DemoMVC.Models.Person>
+    @{
+        ViewData["Title"] = "Index";
+    }
+    <h1>Index</h1>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model =>model.PersonID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model =>model.Fullname)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        </tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PersonID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fullname)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PersonID">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.PersonID">Delete</a>
+                </td>
+            </tr>
+                }
+            </tbody>
