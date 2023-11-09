@@ -11,6 +11,7 @@ namespace DemoMVC.Data
         public DbSet<Person>Person{get;set;}
         public DbSet<Student>Student{get;set;}
         public DbSet<Daily>Daily{get;set;}
-        public DbSet<hethongphanphoi>hethongphanphois{get;set;}
+        public DbSet<HeThongPhanPhoi>HeThongPhanPhoi{get;set;}
+        
     }
 }
